@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: DefaultApp
+  profiles:
+    active: prod
+    
+    
+server:
+  port: 9007
