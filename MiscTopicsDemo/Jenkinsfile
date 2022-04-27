@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+pipeline {
+	agent any
+		stages {
+			stage('Clean stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn clean'
+					}
+				}
+			}
+			stage('Compile stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn compile'
+					}
+				}
+			}
+			stage('Install stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn install'
+					}
+				}
+			}
+		}
+}
+=======
+pipeline {
+	agent any
+		stages {
+			stage('Clean stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn clean'
+					}
+				}
+			}
+			stage('Compile stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn compile'
+					}
+				}
+			}
+			stage('Install stage') {
+				steps {
+					dir("MiscTopicsDemo") {
+						bat 'mvn install'
+					}
+				}
+			}
+		}
+}
+>>>>>>> 851387ff6e173638e6db4596f8740efca242a3f3
